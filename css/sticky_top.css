@@ -1,0 +1,240 @@
+/* 預設圖片 */
+#sticky_img {
+    visibility: visible;
+}
+
+#sticky_defult img{
+    width: 150px;
+}
+
+#sticky_group{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+/* 變更圖片 */
+#sticky_img_change {
+    position: fixed;
+    width: 150px;
+    bottom: 20px;
+    right: 20px;
+    visibility: hidden;
+}
+
+/* 連結 ICON */
+.herf_icon {
+    width: 32px;
+    position: fixed;
+    visibility: hidden;
+}
+
+#back_top {
+    font-size: 48px;
+}
+
+/* 連結 ICON 位置 */
+#sticky_group img:nth-of-type(2) {
+    bottom: 205px;
+    right: 140px;
+}
+
+#sticky_group img:nth-of-type(3) {
+    bottom: 245px;
+    right: 105px;
+}
+
+#sticky_group img:nth-of-type(4) {
+    bottom: 245px;
+    right: 45px;
+}
+
+#sticky_group img:nth-of-type(5) {
+    bottom: 205px;
+    right: 10px;
+}
+
+#sticky_group i {
+    right: 80px;
+}
+
+/* 設定接觸區 */
+#touch_area {
+    width: 150px;
+    height: 130px;
+    background-color: blue;
+    position: fixed;
+    bottom: 150px;
+    right: 15px;
+    visibility: hidden;
+}
+
+
+/* 滑入右下 sticky bar 範圍區所有圖片顯示 */
+#sticky_group:hover img {
+    visibility: visible;
+}
+
+#sticky_group:hover div {
+    visibility: visible;
+    opacity: 0;
+}
+
+#sticky_group:hover #tuoch_area {
+    visibility: visible;
+}
+
+#sticky_group:hover i {
+    visibility: visible;
+    animation-name: hover_sticky_top;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes hover_sticky_top {
+    0% {
+        bottom: 160px;
+        color: black;
+        text-shadow: 3px 3px burlywood;
+    }
+
+    100% {
+        bottom: 200px;
+        color: #329f68;
+        text-shadow: 2px 2px 3px #9f3f32;
+    }
+}
+
+/* 滑入右下 sticky bar 範圍區，預設區圖片透明度為 0 */
+#sticky_group:hover #sticky_defult>img {
+    opacity: 0;
+}
+
+/* 螢幕739~800 */
+@media screen and (min-width:739px) and (max-width:800px) {
+    #sticky_defult img{
+        width: 130px;
+    }
+    
+    #sticky_group{
+        right: 10px;
+    }
+
+    /* 變更圖片 */
+    #sticky_img_change {
+        width: 130px;
+        right: 10px;
+    }
+
+    /* 連結 ICON 位置 */
+    #sticky_group img:nth-of-type(2) {
+        bottom: 190px;
+        right: 110px;
+    }
+
+    #sticky_group img:nth-of-type(3) {
+        bottom: 220px;
+        right: 85px;
+    }
+
+    #sticky_group img:nth-of-type(4) {
+        bottom: 220px;
+        right: 40px;
+    }
+
+    #sticky_group img:nth-of-type(5) {
+        bottom: 190px;
+        right: 10px;
+    }
+
+    #sticky_group i {
+        right: 65px;
+    }
+
+    /* 修改動畫位置 */
+    @keyframes hover_sticky_top {
+        0% {
+            bottom: 130px;
+            color: black;
+            text-shadow: 3px 3px burlywood;
+        }
+
+        100% {
+            bottom: 180px;
+            color: #329f68;
+            text-shadow: 2px 2px 3px #9f3f32;
+        }
+    }
+
+    /* 設定接觸區 */
+    #touch_area {
+        width: 120px;
+        height: 100px;
+    }
+}
+
+/* 螢幕小於738 */
+@media only screen and (max-width: 738px) {
+    #sticky_defult img{
+        width: 90px;
+    }
+    
+    #sticky_group{
+        right: 0px;
+    }
+
+    /* 變更圖片 */
+    #sticky_img_change {
+        width: 90px;
+        right: 0px;
+    }
+
+    /* 連結 ICON 位置 */
+    #sticky_group img:nth-of-type(2) {
+        bottom: 310px;
+        right: 30px;
+    }
+
+    #sticky_group img:nth-of-type(3) {
+        bottom: 270px;
+        right: 30px;
+    }
+
+    #sticky_group img:nth-of-type(4) {
+        bottom: 230px;
+        right: 30px;
+    }
+
+    #sticky_group img:nth-of-type(5) {
+        bottom: 190px;
+        right: 30px;
+    }
+
+    #sticky_group i {
+        right: 30px;
+        font-size: 36px;
+    }
+
+    /* 修改動畫位置 */
+    @keyframes hover_sticky_top {
+        0% {
+            bottom: 130px;
+            color: black;
+            text-shadow: 3px 3px burlywood;
+        }
+
+        100% {
+            bottom: 150px;
+            color: #329f68;
+            text-shadow: 2px 2px 3px #9f3f32;
+        }
+    }
+
+    /* 設定接觸區 */
+    #touch_area {
+        width: 40px;
+        height: 250px;
+        right: 26px;
+        bottom: 95px;
+    }
+}

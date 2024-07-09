@@ -1,0 +1,119 @@
+/* 購物區設定 */
+.shop {
+    margin: 5% 15%;
+    width: 70%;
+    height: fit-content;
+    min-height: max-content;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    background-color: rgba(211, 211, 211, 0.5);
+}
+
+/* col card */
+.col_card {
+    width: 100%;
+    text-align: center;
+}
+
+/* 碰撞區設定 */
+.collision_card {
+    width: 96%;
+    margin: auto;
+    /* background-color: lawngreen; */
+}
+
+/* row card */
+.row_card {
+    display: inline-block;
+    width: 200px;
+    height: 400px;
+    text-align: center;
+    background-color: rgba(50, 159, 104, 0.5);
+}
+
+/* row card 中間位置*/
+.row_card:nth-of-type(2) {
+    margin: 0 7%;
+}
+
+/* 設定圖片範圍 */
+.card_img {
+    width: 100%;
+    height: 70%;
+    overflow: hidden;
+    position: relative;
+    opacity: 1;
+}
+
+/* shop card img 1 設定*/
+.row_card:nth-of-type(1) .card_img img {
+    width: 250%;
+    height: 500%;
+    position: absolute;
+    left: -90px;
+    top: -100px;
+}
+
+/* shop card img 2 設定*/
+.row_card:nth-of-type(2) .card_img img {
+    width: 440%;
+    height: 366%;
+    position: absolute;
+    left: -165px;
+    top: -73px;
+}
+
+/* shop card img 3 設定*/
+.row_card:nth-of-type(3) .card_img img {
+    width: 250%;
+    height: 500%;
+    position: absolute;
+    left: -50px;
+    top: -230px;
+}
+
+/* 設定滑入圖後的字 */
+.card_img p {
+    line-height: 200px;
+    font-size: 48px;
+    text-shadow: 2px 2px aliceblue, -2px -2px 1px antiquewhite;
+}
+
+/* 圖片設定區調透明度 */
+.card_img:hover img{
+    z-index: -1;
+}
+
+/* shop card 標題間距 */
+h3 {
+    line-height: 5px;
+}
+
+h4 {
+    line-height: 5px;
+}
+
+/* read more 樣式 */
+.btn_readmore {
+    width: 100%;
+    height: 34px;
+    background-color: rgba(211, 211, 211, 0.5);
+    
+}
+
+.btn_readmore a {
+    line-height: 40px;
+    text-decoration: none;
+}
+
+/* read more 滑入 */
+.btn_readmore:hover {
+    background-color: rgba(59, 59, 34, 0.7);
+}
+
+.btn_readmore:hover a {
+    color: aliceblue;
+    font-weight: bolder;
+    font-style: italic;
+    text-shadow: 1px 1px 3px #929c55;
+}

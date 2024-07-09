@@ -1,0 +1,92 @@
+/* 螢幕1000~1100 */
+@media screen and (min-width:1000px) and (max-width:1100px) {
+
+    /* row card 位置*/
+    .row_card:nth-of-type(1) {
+        margin-right: 3%;
+    }
+
+    .row_card:nth-of-type(2) {
+        margin: auto;
+    }
+
+    .row_card:nth-of-type(3) {
+        margin-left: 3%;
+    }
+}
+
+/* 螢幕801~1000 */
+@media screen and (min-width:801px) and (max-width:1000px) {
+
+    /* row card 位置*/
+    .row_card:nth-of-type(1) {
+        margin-right: 10%;
+    }
+
+    .row_card:nth-of-type(2) {
+        margin: auto;
+    }
+
+    .row_card:nth-of-type(3) {
+        margin-top: 5%;
+        margin-left: 0%;
+    }
+
+    .collision_card {
+        /* background-color: lawngreen; */
+        width: 85%;
+    }
+}
+
+/* 螢幕739~800 */
+@media screen and (min-width:739px) and (max-width:800px) {
+
+    /* row card 位置*/
+    .row_card:nth-of-type(1) {
+        margin-right: 3%;
+    }
+
+    .row_card:nth-of-type(2) {
+        margin: auto;
+    }
+
+    .row_card:nth-of-type(3) {
+        margin-top: 5%;
+        margin-left: 0%;
+    }
+
+    .collision_card {
+        /* background-color: rgb(227, 252, 0); */
+        width: 85%;
+    }
+}
+
+/* 螢幕小於738 */
+@media only screen and (max-width: 738px) {
+
+    /* row card 位置*/
+    .collision_card .row_card {
+        margin-bottom: 5%;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+    }
+
+    /* shop card img 1 設定*/
+    .row_card:nth-of-type(1) .card_img img {
+        left: -9%;
+        width: 180%;
+    }
+
+    /* shop card img 2 設定*/
+    .row_card:nth-of-type(2) .card_img img {
+        left: -6%;
+        width: 111%;
+    }
+
+    /* shop card img 3 設定*/
+    .row_card:nth-of-type(3) .card_img img {
+        left: -12%;
+        width: 240%;
+    }
+}
